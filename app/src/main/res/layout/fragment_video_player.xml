@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressBackgroundTint="@color/进度条"
+            android:progressTint="@color/主题色2" />
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:surface_type="surface_view"
+            app:use_controller="false">
+
+            <LinearLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/backward"
+                    app:tint="@color/白色" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textColor="@color/白色"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/windows"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/windows"
+                    app:tint="@color/白色" />
+
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/more"
+                    app:tint="@color/白色" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seekto"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="60dp"
+                app:cardBackgroundColor="@color/透明卡片色"
+                android:visibility="gone"
+                app:cardCornerRadius="19dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/seektotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/product2"
+                    android:textColor="@color/白色"
+                    android:textSize="13sp" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/load"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:id="@+id/pause"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/pause"
+                    app:tint="@color/白色" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:max="100"
+                    android:progressDrawable="@drawable/seekbar_progress"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/seekbar_thumb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progresstext"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/product2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/白色"/>
+
+                <ImageView
+                    android:id="@+id/fullscreen"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/fullscreen"
+                    app:tint="@color/白色" />
+            </LinearLayout>
+        </androidx.media3.ui.PlayerView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="图片颜色">#FF777777</color>
+    <color name="主题背景色">#FFFFFFFF</color>
+    <color name="字体颜色">#FF000000</color>
+    <color name="小字体颜色">#FF333333</color>
+    <color name="卡片边框色">#FFF0F3F5</color>
+    <color name="卡片选中色">#FFEBEBEB</color>
+    <color name="深色卡片色">#FFEAEAEA</color>
+    <color name="黑色">#FF000000</color>
+    <color name="蓝色" >#FF4477E0</color>
+    <color name="浅黄" >#FFB100</color>
+    <color name="深黄">#FFDF934F</color>
+    <color name="绿色">#FF00A65E</color>
+    <color name="白色">#FFFFFFFF</color>
+    <color name="主题色">#FF427C</color>
+    <color name="主题色2">#FF7D7D</color>
+    <color name="渐变色">#FA7F69</color>
+    <color name="透明卡片色">#77333333</color>
+    <color name="遮罩色">#44333333</color>
+    <color name="进度条">#88F0F3F5</color>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/filetypecard"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:cardBackgroundColor="@color/卡片边框色"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="0dp"
+            android:transitionName="user_card_transition">
+
+            <ImageView
+                android:id="@+id/face"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/小字体颜色"
+                android:textSize="15sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/小字体颜色"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:maxLines="1"/>
+    </LinearLayout>
+</layout>
