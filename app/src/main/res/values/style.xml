@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="SwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
-        <item name="android:thumb">@drawable/switch_thumb_selector</item>
-        <item name="track">@drawable/switch_track_selector</item>
-    </style>
-</resources>
